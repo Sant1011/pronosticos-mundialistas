@@ -107,9 +107,9 @@ Las pruebas del back cubren las reglas del negocio y sus casos límite: el empat
 ## Despliegue
 
 - **Front:** sitio estático en S3 → `http://pronosticos-mundialistas-zambrano-sitio.s3-website-us-east-1.amazonaws.com`
-- **API:** instancia EC2 (Amazon Linux 2023, `t3.micro`) → `http://IP-PUBLICA-EC2`
+- **API:** instancia EC2 (Amazon Linux 2023, `t3.micro`) → `http://54.82.241.207`
 
-Las dos URL anteriores quedan registradas con capturas en el documento de entrega. Para no consumir el presupuesto del Learner Lab, la instancia se termina después de tomar las evidencias.
+Desplegado y verificado de punta a punta el 20/11/2026: las dos URL quedaron registradas con capturas en el documento de entrega. Para no consumir el presupuesto del Learner Lab, después de tomar las evidencias se terminó la instancia (su IP ya no responde) y no quedaron Elastic IPs reservadas. El sitio del bucket sigue publicado, pero sin API detrás no carga datos.
 
 Recursos en AWS (región `us-east-1`):
 
