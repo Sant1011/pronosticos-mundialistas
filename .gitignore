@@ -1,0 +1,22 @@
+# Dependencias: se reinstalan con npm install
+node_modules/
+
+# Variables de entorno: nunca a Git. Solo se sube el .env.example
+.env
+.env.*
+!.env.example
+
+# Build del front: se genera con npm run build
+dist/
+
+# Reportes y temporales
+coverage/
+*.log
+npm-debug.log*
+
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
